@@ -1,0 +1,19 @@
+@"
+.env
+*.env
+
+n8n_data/
+postgres_data/
+ollama_data/
+
+node_modules/
+__pycache__/
+*.pyc
+
+.vscode/
+.idea/
+
+*.log
+.DS_Store
+Thumbs.db
+"@ | Set-Content .gitignore
