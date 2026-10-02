@@ -1,4 +1,3 @@
-@"
 CREATE TABLE IF NOT EXISTS public.scam_reports (
     id SERIAL PRIMARY KEY,
     risk_level VARCHAR(20) NOT NULL,
@@ -12,4 +11,3 @@ CREATE TABLE IF NOT EXISTS public.scam_reports (
 
 ALTER TABLE public.scam_reports
 ADD COLUMN IF NOT EXISTS confidence_score NUMERIC(5,2);
-"@ | Set-Content "sql\schema.sql"
